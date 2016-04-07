@@ -188,6 +188,13 @@ class FW_Switch_Style_Panel_Css_Generator {
 					$css .= '	color: ' . $color . ";\n";
 					$css .= "}\n";
 				} elseif( $tag == 'a:hover' ) {
+					$css .= '.woocommerce .overlay a:hover, .woocommerce nav.woocommerce-pagination ul li:hover,' . "\n";
+					$css .= '.woocommerce nav.woocommerce-pagination ul li:hover a, .woocommerce nav.woocommerce-pagination ul li:hover span, ' . "\n";
+					$css .= '.single-product .related .yith-wcwl-add-button.btn:hover a {' . "\n";
+					$css .= '	background-color: ' . $color . ";\n";
+					$css .= '	border-color: ' . $color . ";\n";
+					$css .= '	color: #ffffff;' . "\n";
+					$css .= "}\n";
 					$css .= '.pagination-wrap .pagination li a:hover, .pricing-table .list .def-btn:hover, ' . "\n";
 					$css .= 'body .slick-slider .slick-prev:hover, body .slick-slider .slick-next:hover, .def-btn:hover, .btn:hover, ' . "\n";
 					$css .= '.portfoliofilter a:hover .filterbutton, .portfoliocontent .content .overlay:hover, ' . "\n";
@@ -211,7 +218,7 @@ class FW_Switch_Style_Panel_Css_Generator {
 					$css .= '.skillbars .bar-container .meter, .timeline > li .timeline-icon, .pricing-table .price, ' . "\n";
 					$css .= '.journal-content .media .quote, .journal-content .detail .category, .map .map-title, ' . "\n";
 					$css .= '.bg-default, .sidebar .title .shape, .widget_calendar tbody a, .cta-default-bg, ' . "\n";
-					$css .= '.radio input[type="radio"] + label::after {' . "\n";
+					$css .= '.radio input[type="radio"] + label::after, .wishlist-count {' . "\n";
 					$css .= '	background-color: ' . $color . ";\n";
 					$css .= "}\n";
 					$css .= 'body .slick-slider .slick-prev, body .slick-slider .slick-next, ' . "\n";
