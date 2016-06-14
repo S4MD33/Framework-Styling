@@ -122,7 +122,7 @@ class FW_Switch_Style_Panel_Css_Generator {
 			return $css;
 		}
 		foreach ( $selectors as $selector ) {
-			$css .= $selector . ' ' . self::$tags['links'][ $link ] . "{ color: " . $color . ";}\n";
+			$css .= $selector . ' ' . self::$tags['links'][ $tag ] . "{ color: " . $color . ";}\n";
 		}
 		return $css;
 	}
