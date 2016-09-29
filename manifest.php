@@ -4,9 +4,9 @@
 
 $manifest = array();
 
-$manifest['name']        = __( 'Theme Styling', 'mepro' );
-$manifest['description'] = __( "This extension lets you control the website visual style. Starting from predefined styles to changing specific fonts and colors across the website.", 'mepro' );
-$manifest['version']     = '1.1.0';
+$manifest['name']        = __( 'Theme Styling', 'fw' );
+$manifest['description'] = __( "This extension lets you control the website visual style. Starting from predefined styles to changing specific fonts and colors across the website.", 'fw' );
+$manifest['version']     = '1.1.6';
 $manifest['display']     = true;
 $manifest['standalone']  = true;
 

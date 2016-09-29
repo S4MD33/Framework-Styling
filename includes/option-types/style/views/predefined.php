@@ -23,7 +23,7 @@ $tmp_options = array(
 	'predefined' => array(
 		'type'    => 'image-picker',
 		'value'   => 'default',
-		'label'   => __('Predefined Styles', 'mepro'),
+		'label'   => __('Predefined Styles', 'fw'),
 		'choices' => $choices,
 		'blank'   => true
 	)

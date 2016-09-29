@@ -41,7 +41,7 @@
 	</div>
 
 	<div class="description">
-		<p><?php _e( 'This is a simplified preview, not changes are reflected.', 'mepro' ); ?></p>
+		<p><?php _e( 'This is a simplified preview, not changes are reflected.', 'fw' ); ?></p>
 	</div>
 </div>
 <?php

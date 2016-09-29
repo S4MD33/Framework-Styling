@@ -31,7 +31,12 @@ class FW_Extension_Styling extends FW_Extension {
 			}
 		}
 
+    add_action('fw_option_types_init', array($this, '_action_option_types_init'));
 	}
+
+  public function _action_option_types_init() {
+    require_once dirname( __FILE__ ) . '/includes/option-types/style/class-fw-option-type-style.php';
+  }
 
 	/**
 	 * @return string
@@ -57,8 +62,8 @@ class FW_Extension_Styling extends FW_Extension {
 	public function _admin_action_add_menu() {
 
 		$default_args  = array(
-			'page_title' => __( 'Theme Styling', 'mepro' ),
-			'menu_title' => __( 'Styling', 'mepro' ),
+			'page_title' => __( 'Theme Styling', 'fw' ),
+			'menu_title' => __( 'Styling', 'fw' ),
 			'menu_slug'  => $this->get_menu_slug(),
 		);
 		$filtered_args = apply_filters( 'fw_ext_' . $this->get_name() . '_page_' . $default_args['menu_slug'], $default_args );
@@ -75,7 +80,7 @@ class FW_Extension_Styling extends FW_Extension {
 
 	public function render_styling_settings_page() {
 		echo '<div class="wrap" style="opacity:0">';
-		echo '<h2>' . __( 'Theme Styling', 'mepro' ) . '</h2><br/>';
+		echo '<h2>' . __( 'Theme Styling', 'fw' ) . '</h2><br/>';
 		$this->form->render();
 		echo '</div>';
 	}
@@ -101,7 +106,7 @@ class FW_Extension_Styling extends FW_Extension {
 
 		echo fw()->backend->render_options( $options, $values );
 
-		$data['submit']['html'] = '<button class="button-primary button-large">' . __( 'Save', 'mepro' ) . '</button>';
+		$data['submit']['html'] = '<button class="button-primary button-large">' . __( 'Save', 'fw' ) . '</button>';
 
 		unset( $options );
 
@@ -115,7 +120,7 @@ class FW_Extension_Styling extends FW_Extension {
 	 */
 	public function _form_validate( $errors ) {
 		if (!current_user_can('manage_options')) {
-			$errors[] = __('You have no permission to change Styling options', 'mepro');
+			$errors[] = __('You have no permission to change Styling options', 'fw');
 		}
 
 		return $errors;

@@ -116,7 +116,7 @@
 						$tmp_options = array(
 							'background-color' => array(
 								'type'  => 'gradient',
-								'label' => __( 'Background', 'mepro' ),
+								'label' => __( 'Background', 'fw' ),
 								'desc'  => false,
 								'value' => array(
 									'primary' => '#ffffff',
