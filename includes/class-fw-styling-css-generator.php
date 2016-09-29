@@ -129,6 +129,7 @@ class FW_Styling_Css_Generator {
 
 	private static function generate_background_css( $css_selectors, $elements, $settings ) {
 
+    $css = '';
 		if ( ! in_array( 'background', $elements ) ) {
 			return $css;
 		}
